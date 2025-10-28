@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 const VideoTestimonialCard = () => {
-  return <Card className="max-w-[420px] mx-auto bg-card shadow-medium rounded-2xl p-6 text-center animate-fade-in">
+  return <Card className="w-full md:w-3/4 mx-auto bg-card shadow-medium rounded-2xl p-4 md:p-6 text-center animate-fade-in">
       <h3 className="text-2xl font-heading font-semibold text-foreground mb-4">
         Client Video Testimonial
       </h3>
