@@ -1,5 +1,7 @@
 import { Award, Users, Clock, Target } from "lucide-react";
-import aboutOfficePartition from "@/assets/about-office-partition.jpg";
+import aboutOwner from "@/assets/about-owner.jpg";
+import aboutBusinessCard from "@/assets/about-business-card.jpg";
+import aboutLogo from "@/assets/about-logo.jpg";
 
 const About = () => {
   const stats = [
@@ -30,14 +32,33 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
-          <div className="relative animate-fade-in">
+          <div className="relative animate-fade-in space-y-4">
+            {/* Main Owner Photo */}
             <div className="relative rounded-2xl overflow-hidden shadow-strong">
               <img
-                src={aboutOfficePartition}
-                alt="Modern aluminum office partition installation by Althaf Aluminium"
-                className="w-full h-[500px] object-cover"
+                src={aboutOwner}
+                alt="S. Mohamed Meeran - Founder of Althaf Aluminium"
+                className="w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
+            </div>
+            
+            {/* Business Card and Logo Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative rounded-xl overflow-hidden shadow-medium">
+                <img
+                  src={aboutBusinessCard}
+                  alt="Althaf Aluminium business card with contact details"
+                  className="w-full h-[180px] object-cover"
+                />
+              </div>
+              <div className="relative rounded-xl overflow-hidden shadow-medium bg-white flex items-center justify-center p-4">
+                <img
+                  src={aboutLogo}
+                  alt="Althaf Aluminium logo"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
             </div>
             
             {/* Decorative Element */}
