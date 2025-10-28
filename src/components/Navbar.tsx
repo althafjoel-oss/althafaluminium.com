@@ -48,7 +48,7 @@ const Navbar = () => {
             className="flex items-center gap-3 hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             <img src={logo} alt="Althaf Aluminium Logo" className="h-10 w-10" />
-            <span className="text-2xl font-heading font-bold text-white">
+            <span className="text-2xl font-heading font-bold text-foreground">
               <span style={{ color: '#0B7AB5' }}>A</span>lthaf <span style={{ color: '#7CB342' }}>A</span>luminium
             </span>
           </a>
