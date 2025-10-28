@@ -83,8 +83,8 @@ const Contact = () => {
             <h3 className="text-xl font-heading font-semibold text-foreground mb-3 text-center">Visit Us</h3>
             <p className="text-muted-foreground text-center mb-4 text-sm">Our office location</p>
             <p className="text-foreground/80 text-center text-sm leading-relaxed">
-              123 Industrial Area<br />
-              City Name, State - 123456, India
+              16/2 Perumalkovil 2nd Street<br />
+              Virugambakkam, Chennai - 92
             </p>
           </div>
         </div>

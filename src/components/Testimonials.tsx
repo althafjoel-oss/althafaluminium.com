@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import VideoTestimonialCard from "./VideoTestimonialCard";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -121,6 +122,11 @@ const Testimonials = () => {
               </Button>
             </div>
           </Card>
+        </div>
+
+        {/* Video Testimonial */}
+        <div className="mt-16">
+          <VideoTestimonialCard />
         </div>
       </div>
     </section>
