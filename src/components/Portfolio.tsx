@@ -21,19 +21,6 @@ import portfolio7 from "@/assets/portfolio-7.jpg";
 import portfolio8 from "@/assets/portfolio-8.jpg";
 import portfolio9 from "@/assets/portfolio-9.jpg";
 import portfolio10 from "@/assets/portfolio-10.jpg";
-import portfolio11 from "@/assets/portfolio-11.jpg";
-import portfolio12 from "@/assets/portfolio-12.jpg";
-import portfolio13 from "@/assets/portfolio-13.jpg";
-import portfolio14 from "@/assets/portfolio-14.jpg";
-import portfolio15 from "@/assets/portfolio-15.jpg";
-import portfolio16 from "@/assets/portfolio-16.jpg";
-import portfolio17 from "@/assets/portfolio-17.jpg";
-import portfolio18 from "@/assets/portfolio-18.jpg";
-import portfolio19 from "@/assets/portfolio-19.jpg";
-import portfolio20 from "@/assets/portfolio-20.jpg";
-import portfolio21 from "@/assets/portfolio-21.jpg";
-import portfolio22 from "@/assets/portfolio-22.jpg";
-import portfolio23 from "@/assets/portfolio-23.jpg";
 const Portfolio = () => {
   const categories = [{
     title: "Aluminum Partitions",
@@ -68,12 +55,7 @@ const Portfolio = () => {
   }];
   const galleryImages = [
     portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, 
-    portfolio6, portfolio7, portfolio8, portfolio9, portfolio10,
-    portfolio11, portfolio12, portfolio13, portfolio14, portfolio15,
-    portfolio16, portfolio17, portfolio18, portfolio19, portfolio20,
-    portfolio21, portfolio22, portfolio23,
-    project3, aboutOfficePartition, serviceCabin, serviceCeiling, 
-    serviceGlass, servicePartitions, project1, project2
+    portfolio6, portfolio7, portfolio8, portfolio9, portfolio10
   ];
   const handleWhatsApp = () => {
     window.open('https://wa.me/917358403185?text=Hi%20I%20want%20to%20know%20more%20about%20your%20services', '_blank');
