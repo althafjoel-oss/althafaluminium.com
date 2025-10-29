@@ -3,10 +3,12 @@ import { Building2, Factory, Briefcase, Frame, Settings, Sparkles, ArrowRight } 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ParallaxScroll } from "@/components/ui/parallax-scroll";
-import serviceCabin from "@/assets/service-cabin.jpg";
-import serviceCeiling from "@/assets/service-ceiling.jpg";
-import serviceGlass from "@/assets/service-glass.jpg";
-import servicePartitions from "@/assets/service-partitions.jpg";
+import categoryAluminumPartition from "@/assets/category-aluminum-partition.jpg";
+import categoryFalseCeiling from "@/assets/category-false-ceiling.jpg";
+import categoryButterflyLouver from "@/assets/category-butterfly-louver.jpg";
+import categoryGrillPartition from "@/assets/category-grill-partition.jpg";
+import categoryOfficeCabins from "@/assets/category-office-cabins.jpg";
+import categoryCustomDesigns from "@/assets/category-custom-designs.jpg";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/office-partition-modern.png";
 import project3 from "@/assets/project-3.jpg";
@@ -42,34 +44,34 @@ import portfolio28 from "@/assets/portfolio-28.jpg";
 import portfolio29 from "@/assets/portfolio-29.jpg";
 const Portfolio = () => {
   const categories = [{
-    title: "Aluminum Partitions",
+    title: "Aluminum Partition",
     description: "Modern aluminum partition systems for offices and commercial spaces",
-    image: servicePartitions,
+    image: categoryAluminumPartition,
     icon: Building2
   }, {
-    title: "Factory False Ceilings",
+    title: "False Ceiling",
     description: "Industrial-grade false ceiling solutions for manufacturing facilities",
-    image: serviceCeiling,
+    image: categoryFalseCeiling,
     icon: Factory
   }, {
-    title: "Office Partitions",
-    description: "Professional workspace divisions with soundproof and glass options",
-    image: serviceCabin,
+    title: "Butterfly Louver",
+    description: "Stylish butterfly louver systems for ventilation and aesthetics",
+    image: categoryButterflyLouver,
     icon: Briefcase
   }, {
-    title: "Gypsum Ceilings",
-    description: "Elegant gypsum ceiling designs with integrated lighting systems",
-    image: serviceCeiling,
+    title: "Grill Partition",
+    description: "Durable grill partition designs for security and style",
+    image: categoryGrillPartition,
     icon: Frame
   }, {
-    title: "Industrial Installations",
-    description: "Heavy-duty aluminum installations for industrial environments",
-    image: serviceGlass,
+    title: "Office Cabins",
+    description: "Professional office cabin solutions with modern finishes",
+    image: categoryOfficeCabins,
     icon: Settings
   }, {
     title: "Custom Designs",
     description: "Bespoke aluminum solutions tailored to your unique requirements",
-    image: servicePartitions,
+    image: categoryCustomDesigns,
     icon: Sparkles
   }];
   const galleryImages = [
@@ -130,7 +132,7 @@ const Portfolio = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {categories.map((category, index) => {
             const Icon = category.icon;
             return <motion.div key={index} initial={{
@@ -146,18 +148,18 @@ const Portfolio = () => {
               delay: index * 0.1
             }}>
                   <Card className="group overflow-hidden border-0 shadow-soft hover:shadow-strong transition-all duration-500 cursor-pointer h-full">
-                    <div className="relative h-48 md:h-64 overflow-hidden">
+                    <div className="relative h-56 sm:h-64 md:h-72 lg:h-80 overflow-hidden">
                       <img src={category.image} alt={category.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                       <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
                       
-                      <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end">
-                        <div className="bg-accent/20 backdrop-blur-sm rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-5 h-5 md:w-6 md:h-6 text-accent" />
+                      <div className="absolute inset-0 p-3 sm:p-4 md:p-6 flex flex-col justify-end">
+                        <div className="bg-accent/20 backdrop-blur-sm rounded-full w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                          <Icon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-accent" />
                         </div>
-                        <h3 className="text-white text-lg md:text-xl font-heading font-semibold mb-2">
+                        <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-heading font-semibold mb-1 md:mb-2">
                           {category.title}
                         </h3>
-                        <p className="text-white/90 text-xs md:text-sm leading-relaxed">
+                        <p className="text-white/90 text-xs sm:text-xs md:text-sm leading-relaxed">
                           {category.description}
                         </p>
                       </div>
