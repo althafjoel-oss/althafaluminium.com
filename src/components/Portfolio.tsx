@@ -31,6 +31,15 @@ import portfolio17 from "@/assets/portfolio-17.jpg";
 import portfolio18 from "@/assets/portfolio-18.jpg";
 import portfolio19 from "@/assets/portfolio-19.jpg";
 import portfolio20 from "@/assets/portfolio-20.jpg";
+import portfolio21 from "@/assets/portfolio-21.jpg";
+import portfolio22 from "@/assets/portfolio-22.jpg";
+import portfolio23 from "@/assets/portfolio-23.jpg";
+import portfolio24 from "@/assets/portfolio-24.jpg";
+import portfolio25 from "@/assets/portfolio-25.jpg";
+import portfolio26 from "@/assets/portfolio-26.jpg";
+import portfolio27 from "@/assets/portfolio-27.jpg";
+import portfolio28 from "@/assets/portfolio-28.jpg";
+import portfolio29 from "@/assets/portfolio-29.jpg";
 const Portfolio = () => {
   const categories = [{
     title: "Aluminum Partitions",
@@ -67,7 +76,9 @@ const Portfolio = () => {
     portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, 
     portfolio6, portfolio7, portfolio8, portfolio9, portfolio10,
     portfolio11, portfolio12, portfolio13, portfolio14, portfolio15,
-    portfolio16, portfolio17, portfolio18, portfolio19, portfolio20
+    portfolio16, portfolio17, portfolio18, portfolio19, portfolio20,
+    portfolio21, portfolio22, portfolio23, portfolio24, portfolio25,
+    portfolio26, portfolio27, portfolio28, portfolio29
   ];
   const handleWhatsApp = () => {
     window.open('https://wa.me/917358403185?text=Hi%20I%20want%20to%20know%20more%20about%20your%20services', '_blank');
