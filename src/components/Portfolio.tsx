@@ -74,14 +74,7 @@ const Portfolio = () => {
     image: categoryCustomDesigns,
     icon: Sparkles
   }];
-  const galleryImages = [
-    portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, 
-    portfolio6, portfolio7, portfolio8, portfolio9, portfolio10,
-    portfolio11, portfolio12, portfolio13, portfolio14, portfolio15,
-    portfolio16, portfolio17, portfolio18, portfolio19, portfolio20,
-    portfolio21, portfolio22, portfolio23, portfolio24, portfolio25,
-    portfolio26, portfolio27, portfolio28, portfolio29
-  ];
+  const galleryImages = [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6, portfolio7, portfolio8, portfolio9, portfolio10, portfolio11, portfolio12, portfolio13, portfolio14, portfolio15, portfolio16, portfolio17, portfolio18, portfolio19, portfolio20, portfolio21, portfolio22, portfolio23, portfolio24, portfolio25, portfolio26, portfolio27, portfolio28, portfolio29];
   const handleWhatsApp = () => {
     window.open('https://wa.me/917358403185?text=Hi%20I%20want%20to%20know%20more%20about%20your%20services', '_blank');
   };
@@ -190,10 +183,7 @@ const Portfolio = () => {
           duration: 0.6,
           delay: 0.3
         }} className="text-center mt-12">
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full shadow-soft hover:shadow-strong hover:scale-105 transition-all duration-300">
-              View Full Photo Gallery
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            
           </motion.div>
         </div>
       </section>

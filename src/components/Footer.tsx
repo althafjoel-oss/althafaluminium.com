@@ -1,21 +1,18 @@
-import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-
+import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   const handleNavigation = (path: string) => {
     window.location.href = path;
   };
-
   const handleWhatsApp = () => {
     window.open('https://wa.me/917358403185?text=Hi%20I%20want%20to%20know%20more%20about%20your%20services', '_blank');
   };
-
-  return (
-    <footer className="bg-gradient-to-br from-primary via-primary to-primary/90 text-white relative overflow-hidden">
+  return <footer className="bg-gradient-to-br from-primary via-primary to-primary/90 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{ backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, currentColor 10px, currentColor 20px)' }} />
+        <div className="absolute inset-0" style={{
+        backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, currentColor 10px, currentColor 20px)'
+      }} />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
@@ -30,27 +27,13 @@ const Footer = () => {
               Transforming spaces with premium aluminum partitions, false ceilings, and glass works for industrial and commercial excellence.
             </p>
             <div className="flex gap-3">
-              <a 
-                href="#" 
-                className="w-11 h-11 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 shadow-lg"
-                aria-label="Facebook"
-              >
+              <a href="#" className="w-11 h-11 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 shadow-lg" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
-                className="w-11 h-11 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 shadow-lg"
-                aria-label="Instagram"
-              >
+              <a href="#" className="w-11 h-11 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 shadow-lg" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
-                className="w-11 h-11 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 shadow-lg"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
+              
             </div>
           </div>
 
@@ -59,19 +42,13 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-xl mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <button 
-                  onClick={() => handleNavigation('/')} 
-                  className="text-white/80 hover:text-accent hover:translate-x-1 transition-all duration-200 flex items-center gap-2"
-                >
+                <button onClick={() => handleNavigation('/')} className="text-white/80 hover:text-accent hover:translate-x-1 transition-all duration-200 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
                   Home
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavigation('/portfolio')} 
-                  className="text-white/80 hover:text-accent hover:translate-x-1 transition-all duration-200 flex items-center gap-2"
-                >
+                <button onClick={() => handleNavigation('/portfolio')} className="text-white/80 hover:text-accent hover:translate-x-1 transition-all duration-200 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
                   Portfolio
                 </button>
@@ -106,10 +83,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-xl mb-6">Contact Us</h4>
             <div className="space-y-4">
-              <a 
-                href="tel:+917358403185" 
-                className="flex items-start gap-3 group hover:translate-x-1 transition-transform duration-200"
-              >
+              <a href="tel:+917358403185" className="flex items-start gap-3 group hover:translate-x-1 transition-transform duration-200">
                 <div className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-accent transition-colors">
                   <Phone className="w-5 h-5 text-accent group-hover:text-white" />
                 </div>
@@ -119,10 +93,7 @@ const Footer = () => {
                 </div>
               </a>
 
-              <a 
-                href="mailto:meeranm062@gmail.com" 
-                className="flex items-start gap-3 group hover:translate-x-1 transition-transform duration-200"
-              >
+              <a href="mailto:meeranm062@gmail.com" className="flex items-start gap-3 group hover:translate-x-1 transition-transform duration-200">
                 <div className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-accent transition-colors">
                   <Mail className="w-5 h-5 text-accent group-hover:text-white" />
                 </div>
@@ -155,10 +126,7 @@ const Footer = () => {
               <h3 className="text-2xl font-heading font-bold mb-2">Ready to Transform Your Space?</h3>
               <p className="text-white/80">Get a free consultation and quote for your project</p>
             </div>
-            <button
-              onClick={handleWhatsApp}
-              className="bg-[#25D366] hover:bg-[#20BA59] text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg whitespace-nowrap"
-            >
+            <button onClick={handleWhatsApp} className="bg-[#25D366] hover:bg-[#20BA59] text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg whitespace-nowrap">
               <Phone className="w-5 h-5" />
               Contact on WhatsApp
             </button>
@@ -182,7 +150,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
 export default Footer;
