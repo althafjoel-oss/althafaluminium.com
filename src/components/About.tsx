@@ -2,6 +2,8 @@ import { Award, Users, Clock, Target } from "lucide-react";
 import aboutOwner from "@/assets/about-owner.jpg";
 import aboutBusinessCard from "@/assets/about-business-card.jpg";
 import aboutLogo from "@/assets/about-logo.jpg";
+import althafLogo from "@/assets/althaf-logo.jpg";
+import businessCard from "@/assets/business-card.jpg";
 const About = () => {
   const stats = [{
     icon: Clock,
@@ -25,14 +27,21 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
           <div className="relative animate-fade-in space-y-4">
+            {/* Logo Above Owner Photo */}
+            <div className="flex justify-center mb-4">
+              <img src={althafLogo} alt="Althaf Aluminium Logo" className="w-48 h-auto object-contain" />
+            </div>
+
             {/* Main Owner Photo */}
             <div className="relative rounded-2xl overflow-hidden shadow-strong">
               <img src={aboutOwner} alt="S. Mohamed Meeran - Founder of Althaf Aluminium" className="w-full h-[400px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
             </div>
             
-            {/* Business Card and Logo Grid */}
-            
+            {/* Business Card Below Owner Photo */}
+            <div className="rounded-2xl overflow-hidden shadow-medium">
+              <img src={businessCard} alt="Althaf Aluminium Business Card" className="w-full h-auto object-cover" />
+            </div>
             
             {/* Decorative Element */}
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
