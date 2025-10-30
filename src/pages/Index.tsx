@@ -33,7 +33,7 @@ const Index = () => {
             </div>
 
             {/* Portfolio Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 max-w-7xl mx-auto">
               {[
                 { src: project1, alt: "Glass Partition Office Cabin", title: "Glass Partition Office" },
                 { src: project2, alt: "Modern Office Conference Room", title: "Conference Room Design" },
@@ -44,7 +44,7 @@ const Index = () => {
                   className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 animate-fade-in hover-scale"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-[4/3] lg:aspect-[3/2] overflow-hidden">
                     <img
                       src={project.src}
                       alt={project.alt}
