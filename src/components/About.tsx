@@ -2,64 +2,37 @@ import { Award, Users, Clock, Target } from "lucide-react";
 import aboutOwner from "@/assets/about-owner.jpg";
 import aboutBusinessCard from "@/assets/about-business-card.jpg";
 import aboutLogo from "@/assets/about-logo.jpg";
-
 const About = () => {
-  const stats = [
-    {
-      icon: Clock,
-      value: "15+",
-      label: "Years Experience",
-    },
-    {
-      icon: Users,
-      value: "500+",
-      label: "Happy Clients",
-    },
-    {
-      icon: Target,
-      value: "1000+",
-      label: "Projects Completed",
-    },
-    {
-      icon: Award,
-      value: "100%",
-      label: "Quality Assured",
-    },
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-muted">
+  const stats = [{
+    icon: Clock,
+    value: "15+",
+    label: "Years Experience"
+  }, {
+    icon: Users,
+    value: "500+",
+    label: "Happy Clients"
+  }, {
+    icon: Target,
+    value: "1000+",
+    label: "Projects Completed"
+  }, {
+    icon: Award,
+    value: "100%",
+    label: "Quality Assured"
+  }];
+  return <section id="about" className="py-20 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
           <div className="relative animate-fade-in space-y-4">
             {/* Main Owner Photo */}
             <div className="relative rounded-2xl overflow-hidden shadow-strong">
-              <img
-                src={aboutOwner}
-                alt="S. Mohamed Meeran - Founder of Althaf Aluminium"
-                className="w-full h-[400px] object-cover"
-              />
+              <img src={aboutOwner} alt="S. Mohamed Meeran - Founder of Althaf Aluminium" className="w-full h-[400px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
             </div>
             
             {/* Business Card and Logo Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative rounded-xl overflow-hidden shadow-medium">
-                <img
-                  src={aboutBusinessCard}
-                  alt="Althaf Aluminium business card with contact details"
-                  className="w-full h-[180px] object-cover"
-                />
-              </div>
-              <div className="relative rounded-xl overflow-hidden shadow-medium bg-white flex items-center justify-center p-4">
-                <img
-                  src={aboutLogo}
-                  alt="Althaf Aluminium logo"
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            </div>
+            
             
             {/* Decorative Element */}
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
@@ -97,12 +70,8 @@ const About = () => {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-6 pt-8">
               {stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <div
-                    key={index}
-                    className="bg-background rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 group"
-                  >
+              const Icon = stat.icon;
+              return <div key={index} className="bg-background rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 group">
                     <Icon className="w-8 h-8 text-accent mb-3 group-hover:scale-110 transition-transform" />
                     <div className="text-3xl font-heading font-bold text-foreground mb-1">
                       {stat.value}
@@ -110,15 +79,12 @@ const About = () => {
                     <div className="text-sm text-muted-foreground">
                       {stat.label}
                     </div>
-                  </div>
-                );
-              })}
+                  </div>;
+            })}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
