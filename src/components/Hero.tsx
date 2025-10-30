@@ -2,6 +2,10 @@ import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBackground from "@/assets/hero-background.jpg";
 const Hero = () => {
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/917358403185?text=Hi%20I%20want%20to%20get%20a%20free%20quote', '_blank');
+  };
+  
   const scrollToContact = () => {
     const element = document.querySelector("#contact");
     if (element) {
@@ -42,7 +46,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button onClick={scrollToContact} size="lg" className="bg-gradient-accent hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 group">
+            <Button onClick={handleWhatsApp} size="lg" className="bg-gradient-accent hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 group">
               Get a Free Quote
               <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
             </Button>
