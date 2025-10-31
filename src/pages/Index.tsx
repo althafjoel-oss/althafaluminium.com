@@ -56,7 +56,11 @@ const Index = () => {
                       <h3 className="text-white font-heading font-bold text-xl mb-2">
                         {project.title}
                       </h3>
-                      <Link to="/portfolio" className="text-white text-sm flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                      <Link 
+                        to="/portfolio" 
+                        onClick={() => window.scrollTo(0, 0)}
+                        className="text-white text-sm flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100"
+                      >
                         View Details <ArrowRight className="w-4 h-4" />
                       </Link>
                     </div>
@@ -66,7 +70,7 @@ const Index = () => {
             </div>
 
             <div className="text-center">
-              <Link to="/portfolio">
+              <Link to="/portfolio" onClick={() => window.scrollTo(0, 0)}>
                 <Button size="lg" className="text-lg px-8 py-6 rounded-full shadow-strong hover:shadow-xl hover:scale-105 transition-all duration-300">
                   View Full Portfolio
                   <ArrowRight className="ml-2 w-5 h-5" />
